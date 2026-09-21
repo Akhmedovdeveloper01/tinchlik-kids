@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "title": "Tinchlik Kids — Toshkentdagi zamonaviy bolalar bog‘chasi",
+    "description": "Tinchlik Kids — farzandingiz uchun sifatli ta’lim va mehribon jamoa. 2 yoshdan 7 yoshgacha bo‘lgan bolalar uchun 7 ta shinam guruh, 5 turdagi rivojlantiruvchi mashg‘ulot. Mahmud Tarobiy ko‘chasida joylashgan.",
+    "ogTitle": "Tinchlik Kids bog‘chasi — eshiklarimiz doim ochiq!",
+    "ogDescription": "Farzandingiz uchun sifatli ta’lim va mehribon jamoa. Bugun qo‘ng‘iroq qiling yoki ariza qoldiring."
+  },
+  "nav": {
+    "about": "Biz haqimizda",
+    "program": "Dastur",
+    "groups": "Guruhlar",
+    "pricing": "Narxlar",
+    "gallery": "Galereya",
+    "contact": "Aloqa",
+    "callBtn": "Qo‘ng‘iroq qilish",
+    "applyBtn": "Ariza qoldirish"
+  },
+  "header": {
+    "langSwitch": "Tilni tanlang"
+  },
+  "hero": {
+    "greeting": "Assalomu alaykum, aziz ota-onalar!",
+    "title": "Tinchlik Kids bog‘chasi eshiklarini ochdi!",
+    "subtitle": "Farzandingiz uchun sifatli ta’lim va mehribon jamoa. 2 yoshdan 7 yoshgacha bo‘lgan bolajonlarni kutib qolamiz.",
+    "ctaApply": "Ariza qoldirish",
+    "ctaCall": "Qo‘ng‘iroq qilish",
+    "openDoors": "Bizni ko‘rib ketish uchun eshiklarimiz doim ochiq!"
+  },
+  "stats": {
+    "groups": "7 ta",
+    "groupsLabel": "shinam guruh",
+    "age": "2–7 yosh",
+    "ageLabel": "bolajonlar uchun",
+    "programs": "5 turdagi",
+    "programsLabel": "rivojlantiruvchi mashg‘ulot",
+    "since": "Fevraldan",
+    "sinceLabel": "beri faoliyatdamiz"
+  },
+  "about": {
+    "eyebrow": "Biz haqimizda",
+    "title": "Nega aynan Tinchlik Kids?",
+    "text": "Tinchlik Kids — Toshkent shahridagi xususiy bolalar bog‘chasi. Biz har bir bolaga individual yondashib, ularning bilim olish va rivojlanish yo‘lida ishonchli hamroh bo‘lishga intilamiz. Jamoamiz mehribon, xonalarimiz shinam va keng — farzandingiz bizda o‘zini doim xavfsiz va baxtli his qiladi.",
+    "benefits": {
+      "quality": {
+        "title": "Sifatli ta’lim",
+        "desc": "Zamonaviy metodika asosida quriladigan rivojlantiruvchi mashg‘ulotlar"
+      },
+      "care": {
+        "title": "Mehribon jamoa",
+        "desc": "Bolalarni chin dildan sevadigan tajribali tarbiyachilar"
+      },
+      "rooms": {
+        "title": "Shinam va keng xonalar",
+        "desc": "7 ta yorug‘ va qulay guruh xonasi har bir yosh toifasi uchun"
+      },
+      "safety": {
+        "title": "Xavfsizlik",
+        "desc": "Qiziqarli va xavfsiz muhit — ota-onalar farzandi bilan nima bo‘layotganini kuzatib borishi uchun kunlik video hisobotlar taqdim etiladi"
+      },
+      "nutrition": {
+        "title": "Sog‘lom ovqatlanish",
+        "desc": "Bolajonlar uchun maxsus tayyorlangan sog‘lom va to‘yimli taomlar kun davomida beriladi"
+      }
+    }
+  },
+  "program": {
+    "eyebrow": "Dastur",
+    "title": "Rivojlantiruvchi mashg‘ulotlar",
+    "subtitle": "5 turdagi qiziqarli va intellektual rivojlantiruvchi mashg‘ulotlar orqali farzandingiz ko‘p qirrali rivojlanadi",
+    "items": {
+      "english": {
+        "title": "Ingliz tili",
+        "desc": "TODO: Mashg‘ulot tavsifini tasdiqlang — o‘yin orqali ingliz tiliga tanishtirish"
+      },
+      "logic": {
+        "title": "Mantiq va matematika",
+        "desc": "TODO: Mashg‘ulot tavsifini tasdiqlang — mantiqiy fikrlash va sonlar olami"
+      },
+      "art": {
+        "title": "Rasm va ijodkorlik",
+        "desc": "TODO: Mashg‘ulot tavsifini tasdiqlang — rang-barang ijodiy mashg‘ulotlar"
+      },
+      "music": {
+        "title": "Musiqa va raqs",
+        "desc": "TODO: Mashg‘ulot tavsifini tasdiqlang — ritm va harakat orqali rivojlanish"
+      },
+      "sport": {
+        "title": "Sport",
+        "desc": "TODO: Mashg‘ulot tavsifini tasdiqlang — jismoniy tarbiya va harakatchan o‘yinlar"
+      }
+    }
+  },
+  "groups": {
+    "eyebrow": "Guruhlar",
+    "title": "Yosh toifalari bo‘yicha guruhlar",
+    "subtitle": "Har bir yosh bosqichi uchun maxsus tayyorlangan dastur",
+    "tabs": {
+      "toddler": {
+        "label": "2–3 yosh",
+        "title": "Kichkintoylar guruhi",
+        "desc": "TODO: 2–3 yoshli bolalar uchun guruh tavsifini tasdiqlang — birinchi ijtimoiylashuv, asosiy ko‘nikmalar va g‘amxo‘rlik"
+      },
+      "middle": {
+        "label": "3–5 yosh",
+        "title": "O‘rta guruh",
+        "desc": "TODO: 3–5 yoshli bolalar uchun guruh tavsifini tasdiqlang — nutq rivoji, ijodkorlik va o‘yin orqali ta’lim"
+      },
+      "senior": {
+        "label": "5–7 yosh",
+        "title": "Maktabga tayyorlov guruhi",
+        "desc": "TODO: 5–7 yoshli bolalar uchun guruh tavsifini tasdiqlang — o‘qish, yozish va maktab hayotiga tayyorgarlik"
+      }
+    }
+  },
+  "schedule": {
+    "eyebrow": "Kun tartibi",
+    "title": "Bolajonlarning bir kuni",
+    "subtitle": "TODO: Aniq vaqtlarni bog‘chaning haqiqiy jadvali bilan tasdiqlang",
+    "items": {
+      "breakfast": { "label": "Nonushta" },
+      "morningActivity": { "label": "Ertalabki mashg‘ulotlar" },
+      "walk": { "label": "Sayr" },
+      "lunch": { "label": "Tushlik" },
+      "nap": { "label": "Uyqu vaqti" },
+      "afternoonActivity": { "label": "Kunduzgi mashg‘ulotlar" },
+      "snack": { "label": "Polden" },
+      "freePlay": { "label": "Erkin o‘yinlar" },
+      "pickup": { "label": "Ota-onalar kutib olishi" }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Narxlar",
+    "title": "Oylik to‘lov",
+    "subtitle": "Farzandingiz uchun eng yaxshi shart-sharoitlar",
+    "perMonth": "oyiga",
+    "young": {
+      "label": "2–3 yoshli bolajonlar uchun",
+      "note": "Kichkintoylar guruhi"
+    },
+    "older": {
+      "label": "Katta yoshdagi bolalar uchun",
+      "note": "3 yoshdan 7 yoshgacha"
+    },
+    "bookBtn": "Joy band qilish",
+    "calculator": {
+      "title": "Narx kalkulyatori",
+      "selectAge": "Bolangiz yoshini tanlang",
+      "resultPrefix": "Oylik to‘lov:",
+      "options": {
+        "young": "2–3 yosh",
+        "older": "3–7 yosh"
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Galereya",
+    "title": "Bog‘chamiz hayotidan lavhalar",
+    "subtitle": "TODO: Haqiqiy rasmlar bilan almashtiring"
+  },
+  "testimonials": {
+    "eyebrow": "Fikrlar",
+    "title": "Ota-onalar bizning haqimizda",
+    "items": {
+      "1": {
+        "name": "TODO: Ism familiya",
+        "role": "Bolakay ota-onasi",
+        "text": "TODO: Haqiqiy fikr bilan almashtiring — masalan, bog‘chaning ijobiy tomonlari haqida qisqa mulohaza."
+      },
+      "2": {
+        "name": "TODO: Ism familiya",
+        "role": "Bolakay ota-onasi",
+        "text": "TODO: Haqiqiy fikr bilan almashtiring."
+      },
+      "3": {
+        "name": "TODO: Ism familiya",
+        "role": "Bolakay ota-onasi",
+        "text": "TODO: Haqiqiy fikr bilan almashtiring."
+      }
+    }
+  },
+  "faq": {
+    "eyebrow": "Savol-javob",
+    "title": "Ko‘p beriladigan savollar",
+    "items": [
+      {
+        "q": "Qaysi yoshdan qabul qilasiz?",
+        "a": "Biz 2 yoshdan 7 yoshgacha bo‘lgan bolalarni qabul qilamiz. Har bir yosh toifasi uchun alohida guruh va dastur mavjud."
+      },
+      {
+        "q": "To‘lov qanday amalga oshiriladi?",
+        "a": "To‘lov oylik asosda amalga oshiriladi. 2–3 yoshli bolalar uchun 1 800 000 so‘m, katta yoshdagi bolalar uchun 1 600 000 so‘m. Batafsil ma’lumot uchun biz bilan bog‘laning."
+      },
+      {
+        "q": "Bog‘chani oldindan ko‘rib ketsa bo‘ladimi?",
+        "a": "Albatta! Bizni ko‘rib ketish uchun eshiklarimiz doim ochiq. Istalgan vaqtda tashrif buyurishingiz mumkin."
+      },
+      {
+        "q": "Ovqatlanish qanday tashkil etilgan?",
+        "a": "TODO: Ovqatlanish tartibi haqida aniq ma’lumot kiriting (menyu, necha mahal ovqatlanish va h.k.)"
+      },
+      {
+        "q": "Ish vaqti qanday?",
+        "a": "TODO: Aniq ish vaqtini tasdiqlang."
+      }
+    ]
+  },
+  "form": {
+    "eyebrow": "Ariza",
+    "title": "Ariza qoldiring",
+    "subtitle": "Formani to‘ldiring, biz siz bilan tez orada bog‘lanamiz",
+    "name": "Ota-ona ismi",
+    "namePlaceholder": "Ismingizni kiriting",
+    "phone": "Telefon raqami",
+    "age": "Bola yoshi",
+    "agePlaceholder": "Yoshni tanlang",
+    "ageOptions": {
+      "1": "1 yosh",
+      "2": "2 yosh",
+      "3": "3 yosh",
+      "4": "4 yosh",
+      "5": "5 yosh",
+      "6": "6 yosh",
+      "7": "7 yosh"
+    },
+    "time": "Qulay aloqa vaqti",
+    "timePlaceholder": "Vaqtni tanlang",
+    "timeOptions": {
+      "morning": "Ertalab (09:00–12:00)",
+      "afternoon": "Kunduzi (12:00–17:00)",
+      "evening": "Kechqurun (17:00–20:00)"
+    },
+    "comment": "Izoh",
+    "commentPlaceholder": "Qo‘shimcha savol yoki izohingiz (ixtiyoriy)",
+    "submit": "Yuborish",
+    "submitting": "Yuborilmoqda...",
+    "successTitle": "Rahmat!",
+    "successText": "Arizangiz qabul qilindi. Tez orada siz bilan bog‘lanamiz!",
+    "errorText": "Xatolik yuz berdi. Iltimos, qayta urinib ko‘ring yoki qo‘ng‘iroq qiling.",
+    "errors": {
+      "nameRequired": "Ismingizni kiriting",
+      "nameMin": "Ism kamida 2 ta harfdan iborat bo‘lishi kerak",
+      "phoneRequired": "Telefon raqamini kiriting",
+      "phoneInvalid": "To‘g‘ri telefon raqamini kiriting (+998 XX XXX XX XX)",
+      "ageRequired": "Bola yoshini tanlang"
+    }
+  },
+  "contact": {
+    "eyebrow": "Aloqa",
+    "title": "Biz bilan bog‘laning",
+    "address": "Manzil",
+    "phone": "Telefon",
+    "instagram": "Instagram",
+    "workingHours": "Ish vaqti",
+    "directions": "Yo‘nalish olish",
+    "openDoors": "Bizni ko‘rib ketish uchun eshiklarimiz doim ochiq!",
+    "branches": {
+      "main": "1-filial",
+      "branch2": "2-filial (yangi ochildi)"
+    }
+  },
+  "footer": {
+    "tagline": "Farzandingiz uchun sifatli ta’lim va mehribon jamoa",
+    "quickLinks": "Tezkor havolalar",
+    "contacts": "Kontaktlar",
+    "followUs": "Ijtimoiy tarmoqlarda",
+    "rights": "Barcha huquqlar himoyalangan."
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "backToTop": "Yuqoriga",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "call": "Qo‘ng‘iroq qilish"
+  }
+}
