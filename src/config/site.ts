@@ -7,14 +7,12 @@
 
 export const siteConfig = {
   name: "Tinchlik Kids",
-  foundedMonth: "Fevral",
-  foundedYear: 2026,
+  foundedYear: 2019,
 
   contact: {
     phone: "+998 90 730 20 21",
     phoneHref: "tel:+998907302021",
-    // TODO: Telegram kanal/bot havolasini qo'ying (masalan, https://t.me/tinchlik_kids)
-    telegram: "https://t.me/tinchlik_kids",
+    telegram: "https://t.me/Tinchlik_kids",
     instagram: "https://instagram.com/tinchlik_kids",
     instagramHandle: "@tinchlik_kids",
     // Ikkala filial ham shu yerda ro'yxatlangan. Yangi filial qo'shish yoki
@@ -23,7 +21,7 @@ export const siteConfig = {
     branches: [
       {
         id: "main",
-        address: "Mahmud Tarobiy ko'chasi, 42-uy yonida, Toshkent",
+        address: "Mahmud Tarobiy ko'chasi, 42-uy yonida, Navoiy",
         // TODO: Google Maps'dan aniq koordinatalarni oling va iframe src'ni yangilang
         mapEmbedSrc:
           "https://www.google.com/maps?q=Mahmud+Tarobiy+ko'chasi+42,+Toshkent&output=embed",
@@ -32,7 +30,7 @@ export const siteConfig = {
       },
       {
         id: "branch2",
-        address: "Mahmud Tarobiy ko'chasi, 40A-uy yonida, Toshkent",
+        address: "Mahmud Tarobiy ko'chasi, 40A-uy yonida, Navoiy",
         // TODO: Google Maps'dan aniq koordinatalarni oling va iframe src'ni yangilang
         mapEmbedSrc:
           "https://www.google.com/maps?q=Mahmud+Tarobiy+ko'chasi+40A,+Toshkent&output=embed",
@@ -93,13 +91,46 @@ export const siteConfig = {
   ],
 
   gallery: {
-    // TODO: public/images/gallery/ papkasiga haqiqiy rasmlarni joylang.
-    // Hozircha 1.svg...8.svg placeholder rasmlar turibdi. Haqiqiy rasm qo'shganda
-    // fayl nomini saqlab .webp formatga o'tkazing va pastdagi `ext` ni "webp" ga o'zgartiring.
-    count: 8,
-    basePath: "/images/gallery",
-    ext: "svg",
+    // Har bir qator — public/images/gallery/ papkasidagi bitta rasm yo'li.
+    // Haqiqiy rasm qo'shganda mos yo'lni shu yerga yozing (.webp tavsiya etiladi).
+    // TODO: qolgan 4 ta joyni ham haqiqiy fotosuratlar bilan almashtiring
+    images: [
+      "/images/gallery/1.webp", // bog'chaning tashqi ko'rinishi
+      "/images/gallery/2.webp", // bog'chaning kirish qismi
+      "/images/gallery/3.webp", // Navro'z bayrami
+      "/images/gallery/4.webp", // guruh mashg'uloti
+      "/images/gallery/5.svg",
+      "/images/gallery/6.svg",
+      "/images/gallery/7.svg",
+      "/images/gallery/8.svg",
+    ],
   },
+
+  // TODO: Haqiqiy videolar bilan almashtiring (public/videos/ papkasiga MP4 joylang).
+  // README.md dagi "Video qo'shish" bo'limida ffmpeg orqali siqish bo'yicha ko'rsatma bor.
+  videos: [
+    {
+      id: "video1",
+      src: "/videos/1.mp4",
+      poster: "/images/videos/1.webp",
+      title_uz: "Video 1 — TODO: sarlavha qo'ying",
+      title_ru: "Видео 1 — TODO: добавьте заголовок",
+    },
+    {
+      id: "video2",
+      src: "/videos/2.mp4",
+      poster: "/images/videos/2.webp",
+      title_uz: "Video 2 — TODO: sarlavha qo'ying",
+      title_ru: "Видео 2 — TODO: добавьте заголовок",
+    },
+    {
+      id: "video3",
+      src: "/videos/3.mp4",
+      poster: "/images/videos/3.webp",
+      title_uz: "Video 3 — TODO: sarlavha qo'ying",
+      title_ru: "Видео 3 — TODO: добавьте заголовок",
+    },
+  ],
 
   // TODO: Haqiqiy ota-onalar fikrlarini ism va rasm bilan almashtiring
   testimonials: [

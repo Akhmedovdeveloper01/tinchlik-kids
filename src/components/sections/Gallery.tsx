@@ -12,10 +12,7 @@ export function Gallery() {
   const t = useTranslations("gallery");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const images = Array.from(
-    { length: siteConfig.gallery.count },
-    (_, i) => `${siteConfig.gallery.basePath}/${i + 1}.${siteConfig.gallery.ext}`,
-  );
+  const images = [...siteConfig.gallery.images];
 
   return (
     <section id="gallery" className="bg-cream py-20 sm:py-28">

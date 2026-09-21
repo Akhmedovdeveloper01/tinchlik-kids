@@ -33,7 +33,7 @@
     "ageLabel": "bolajonlar uchun",
     "programs": "5 turdagi",
     "programsLabel": "rivojlantiruvchi mashg‘ulot",
-    "since": "Fevraldan",
+    "since": "2019-yildan",
     "sinceLabel": "beri faoliyatdamiz"
   },
   "about": {
@@ -156,6 +156,13 @@
     "eyebrow": "Galereya",
     "title": "Bog‘chamiz hayotidan lavhalar",
     "subtitle": "TODO: Haqiqiy rasmlar bilan almashtiring"
+  },
+  "videos": {
+    "eyebrow": "Video",
+    "title": "Bog‘chamiz hayotidan",
+    "subtitle": "Kunlik mashg‘ulotlar va quvnoq lahzalarni video orqali kuzating",
+    "followBtn": "Instagram’da kuzatib boring @tinchlik_kids",
+    "close": "Yopish"
   },
   "testimonials": {
     "eyebrow": "Fikrlar",

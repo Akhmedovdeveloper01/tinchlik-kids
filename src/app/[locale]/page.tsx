@@ -7,6 +7,7 @@ import { Groups } from "@/components/sections/Groups";
 import { Schedule } from "@/components/sections/Schedule";
 import { Pricing } from "@/components/sections/Pricing";
 import { Gallery } from "@/components/sections/Gallery";
+import { Videos } from "@/components/sections/Videos";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { ApplicationForm } from "@/components/sections/ApplicationForm";
@@ -30,6 +31,7 @@ export default async function HomePage({
       <Schedule />
       <Pricing />
       <Gallery />
+      <Videos />
       <Testimonials />
       <FAQ />
       <ApplicationForm />

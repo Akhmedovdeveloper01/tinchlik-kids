@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight, Quote, User } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { WaveDivider } from "@/components/decor/WaveDivider";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
@@ -34,7 +35,8 @@ export function Testimonials() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="bg-white py-20 sm:py-28">
+    <section className="relative bg-white py-20 sm:py-28">
+      <WaveDivider className="absolute -top-[49px] sm:-top-[79px]" color="#ffffff" />
       <div className="container-page flex flex-col items-center gap-12">
         <SectionHeading eyebrow={t("eyebrow")} title={t("title")} />
 

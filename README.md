@@ -88,14 +88,67 @@ aks holda o'sha til sahifasida xatolik chiqadi.
 
 ## Rasmlarni almashtirish
 
-Galereya rasmlari `public/images/gallery/1.svg` dan `8.svg` gachadir — bular hozircha
-rang-barang placeholder rasmlar. Haqiqiy fotosuratlar bilan almashtirish uchun:
+Galereya rasmlari ro'yxati `src/config/site.ts` dagi `gallery.images` massivida —
+har bir qator bitta rasmning yo'li. Hozircha 1-4-o'rinlarda haqiqiy suratlar bor
+(`public/images/gallery/1.webp` — tashqi ko'rinish, `2.webp` — kirish qismi,
+`3.webp` — Navro'z bayrami, `4.webp` — guruh mashg'uloti), qolgan 5-8-o'rinlarda
+rang-barang placeholder SVG turibdi.
 
-1. 8 ta rasmni `.webp` formatida tayyorlang (tavsiya etilgan o'lcham: kamida 800×800px, kvadrat)
-2. `public/images/gallery/1.webp` ... `8.webp` nomlari bilan saqlang (eski `.svg`
-   fayllarni o'chirib tashlashingiz mumkin)
-3. `src/config/site.ts` faylida `gallery.ext: "svg"` qatorini `gallery.ext: "webp"` ga
-   o'zgartiring
+Yangi rasm qo'shish yoki placeholder'ni almashtirish uchun:
+
+1. Rasmni `.webp` formatida tayyorlang (tavsiya etilgan o'lcham: kamida 800×800px, kvadrat)
+2. `public/images/gallery/` papkasiga saqlang (masalan, `3.webp`)
+3. `src/config/site.ts` dagi `gallery.images` massivida mos qatorni yangi yo'lga
+   almashtiring (masalan, `"/images/gallery/3.svg"` ni `"/images/gallery/3.webp"` ga)
+
+## Video qo'shish
+
+"Bog'chamiz hayotidan" bo'limida saytga to'g'ridan-to'g'ri yuklangan MP4 videolar
+ko'rsatiladi.
+
+Videolar ro'yxati `src/config/site.ts` dagi `videos` massivida — hozircha 3 ta
+placeholder video bor (`public/videos/1.mp4`, `2.mp4`, `3.mp4` — bir xil fondagi
+qisqa "TODO" kliplar). Haqiqiy video bilan almashtirish uchun:
+
+1. Videongizni H.264/MP4 formatga, 720p'ga va tахminan 2–4 MB'gacha siqing.
+   Terminalda `ffmpeg` o'rnatilgan bo'lsa, quyidagi buyruqni ishlating
+   (vertikal 9:16 video uchun, masalan telefonda olingan):
+
+   ```bash
+   ffmpeg -i kirish-video.mp4 \
+     -vf "scale=720:-2" \
+     -c:v libx264 -preset slow -crf 26 \
+     -c:a aac -b:a 96k \
+     -movflags +faststart \
+     chiqish-video.mp4
+   ```
+
+   - `scale=720:-2` — kenglikni 720px'ga tushiradi (balandlik nisbatga qarab
+     avtomatik hisoblanadi)
+   - `-crf 26` — sifat/hajm balansi (kichikroq fayl uchun 28–30 ga oshiring,
+     sifatliroq uchun 22–24 ga tushiring)
+   - Natijaviy fayl hajmini `ls -lh chiqish-video.mp4` bilan tekshiring —
+     2–4 MB atrofida bo'lishi kerak
+
+2. Faylni `public/videos/` papkasiga saqlang (masalan, `4.mp4`)
+3. Video uchun "poster" (birinchi kadr) rasmini tayyorlang:
+
+   ```bash
+   ffmpeg -i public/videos/4.mp4 -vframes 1 -q:v 3 public/images/videos/4.webp
+   ```
+
+4. `src/config/site.ts` dagi `videos` massiviga yangi obyekt qo'shing (yoki
+   placeholder'ni almashtiring):
+
+   ```ts
+   {
+     id: "video4",
+     src: "/videos/4.mp4",
+     poster: "/images/videos/4.webp",
+     title_uz: "Ertalabki mashg'ulot",
+     title_ru: "Утреннее занятие",
+   },
+   ```
 
 Open Graph rasmi uchun `public/og-image.jpg` (1200×630px) faylini qo'shing — bu ijtimoiy
 tarmoqlarda havola ulashilganda ko'rinadigan rasm.
@@ -165,7 +218,6 @@ saytga qaytganda ("/") avtomatik o'sha saqlangan tilga yo'naltiriladi (standart 
 Loyihada `// TODO:` yoki `TODO:` bilan belgilangan barcha joylar quyida ro'yxatda:
 
 1. **`src/config/site.ts`**
-   - Telegram kanal/bot havolasi (`contact.telegram`)
    - Google Maps'dagi aniq koordinatalar — ikkala filial uchun ham
      (`contact.branches[].mapEmbedSrc`, `contact.branches[].mapDirectionsUrl`)
    - Ish vaqti (`workingHours`) — hozircha taxminiy `07:30–19:00` qo'yilgan
@@ -187,15 +239,21 @@ Loyihada `// TODO:` yoki `TODO:` bilan belgilangan barcha joylar quyida ro'yxatd
    - `testimonials.items.1/2/3` — haqiqiy ism va fikrlar
    - `faq.items[3]` (ovqatlanish) va `faq.items[4]` (ish vaqti) — aniq javoblar
 
-3. **`public/images/gallery/`** — 8 ta placeholder SVG rasm o'rniga haqiqiy fotosuratlar
-   (yuqoridagi "Rasmlarni almashtirish" bo'limiga qarang)
+3. **`public/images/gallery/`** — qolgan 4 ta placeholder SVG rasm o'rniga haqiqiy
+   fotosuratlar (1-4-o'rin allaqachon haqiqiy suratlar bilan to'ldirilgan;
+   yuqoridagi "Rasmlarni almashtirish" bo'limiga qarang)
 
-4. **`public/og-image.jpg`** — ijtimoiy tarmoqlarda ulashish uchun 1200×630px rasm
+4. **`public/videos/1.mp4`, `2.mp4`, `3.mp4`** — hozircha bir xil fondagi qisqa
+   placeholder kliplar. Haqiqiy videolar bilan almashtiring va `src/config/site.ts`
+   dagi `videos[].title_uz` / `title_ru` sarlavhalarini yozing (yuqoridagi
+   "Video qo'shish" bo'limiga qarang)
+
+5. **`public/og-image.jpg`** — ijtimoiy tarmoqlarda ulashish uchun 1200×630px rasm
    (hozircha `src/app/[locale]/layout.tsx` da yo'lga havola bor, lekin fayl yo'q)
 
-5. **Telegram bot** — `.env.example` asosida `.env.local` yaratib, token va chat ID
+6. **Telegram bot** — `.env.example` asosida `.env.local` yaratib, token va chat ID
    kiritish (yuqoridagi "Telegram botni ulash" bo'limiga qarang)
 
-6. **Xodimlar** — agar sahifada xodimlar bo'limi kerak bo'lsa, `src/config/site.ts`
+7. **Xodimlar** — agar sahifada xodimlar bo'limi kerak bo'lsa, `src/config/site.ts`
    dagi bo'sh `staff` massivini to'ldirib, mos komponent qo'shish kerak (hozirda
    texnik topshiriqda alohida bo'lim so'ralmagan, shuning uchun UI qo'shilmagan)
